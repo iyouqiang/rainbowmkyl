@@ -16,8 +16,8 @@ import { StackNavigator, TabNavigator } from "react-navigation";
 import EHome from '../js/jsfakepage/FPHome';
 import ESetup from '../js/jsfakepage/FPSetup.js';
 import EMore from '../js/jsfakepage/FPMore.js';
-const Hometest2 = require('../js/jsfakepage/img/ic_hometest2_active.png');
-const MeIcon = require('../js/jsfakepage/img/ic_tabbar_me_active.png');
+const Hometest2 = require('./jsfakepage/img/ic_hometest2_active.png');
+const MeIcon = require('./jsfakepage/img/ic_tabbar_me_active.png');
 
 // ************
 
