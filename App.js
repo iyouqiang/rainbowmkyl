@@ -38,9 +38,7 @@ export default class App extends Component<{}> {
 
     }
 
-
     componentWillUnmount() {
-
 
         // ✰✰✰✰✰✰✰✰✰ 请勿删除 ✰✰✰✰✰✰✰
         //移除监听

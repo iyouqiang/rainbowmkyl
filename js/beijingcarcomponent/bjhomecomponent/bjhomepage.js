@@ -26,6 +26,7 @@ var CELLHEIGHT = 100;
 export default class bjhomepage extends Component {
 
     constructor(props) {
+
         super(props);
 
         this.state = {
@@ -45,8 +46,6 @@ export default class bjhomepage extends Component {
         )
     }
         componentDidMount() {
-
-        //{this._requestHomeinfo()}
     }
 
     _renderSectionlistView() {

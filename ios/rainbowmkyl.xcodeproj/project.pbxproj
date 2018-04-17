@@ -2092,8 +2092,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODEPUSH_KEY = "FBDBf9iu-n7rLWHTTNxJ283FsGJ0d7d62cf4-7fea-4153-b5ee-b7707e421717";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: cun huang (95GRDS35JH)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: bing tian (AZF2ZMEDC9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: bing tian (AZF2ZMEDC9)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				CusAppName = "彩彩";
@@ -2149,7 +2149,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.World.HACKER.MONE;
 				PRODUCT_NAME = rainbowmkyl;
-				PROVISIONING_PROFILE = "06acbdf2-f36c-43f3-bc11-b2866de9cd52";
+				PROVISIONING_PROFILE = "559329c8-f4b2-41df-8a2a-d743ba8afcfa";
 				PROVISIONING_PROFILE_SPECIFIER = EcarayDebug;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
