@@ -22,7 +22,6 @@
 #define AlertWidth kUIScreenWidth_Scale_iPhone6(300)
 #define AlertHeight kUIScreenHeight_Scale_iPhone6(300)
 
-
 @interface WYWebController ()<UIWebViewDelegate>
 
 @property (nonatomic, strong) UIView *alertView;

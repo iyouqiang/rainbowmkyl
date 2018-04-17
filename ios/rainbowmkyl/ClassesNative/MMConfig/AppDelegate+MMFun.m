@@ -17,21 +17,14 @@
 #import "MMNetWorkManager.h"
 #import "SAMKeychain.h"
 
-
-
 @implementation AppDelegate (MMFun)
-
 
 - (void)setLoadConfigThirdService {
   
   [self mmMonitorNetwork];
   
   [self judgmentSwitchRoute];
-  
 }
-
-
-
 
 - (void)mianProjectPage {
   
@@ -52,9 +45,6 @@
   [self restoreRootViewController:self.reactNativeRootController];
 }
 
-
-
-
 - (void)mmMonitorNetwork {
   
   self.networkManager = [AFNetworkReachabilityManager sharedManager];
@@ -70,14 +60,12 @@
         } else {
           [weakSelf sendAsyncRequestSwitchRoute];
         }
-        
       }
     }
   }];
   
   [self.networkManager startMonitoring];
 }
-
 
 - (void)interfaceOrientation:(UIInterfaceOrientation)orientation
 {
@@ -91,7 +79,6 @@
     [invocation invoke];
   }
 }
-
 
 - (BOOL)isFirstAuthorizationNetwork {
   NSString *serviceName = [[NSBundle mainBundle] bundleIdentifier];
@@ -121,8 +108,6 @@
   }
 }
 
-
-
 - (void)webProjectPage {
   
   self.isRoute = YES;
@@ -135,7 +120,6 @@
   
   [self restoreRootViewController:self.webRootController];
 }
-
 
 - (void)restoreRootViewController:(UIViewController *)newRootController {
   

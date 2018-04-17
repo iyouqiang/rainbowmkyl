@@ -10,10 +10,9 @@
 
 @interface AppDelegate (ThirdService)
 
-
 - (void)jPushService;
--(void)setBugtagsOptions;
--(void)configureBoardManager;
+- (void)setBugtagsOptions;
+- (void)configureBoardManager;
 - (void)initWebRootController;
 
 @end

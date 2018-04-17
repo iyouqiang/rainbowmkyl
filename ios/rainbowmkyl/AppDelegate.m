@@ -10,8 +10,6 @@
 #import "AppDelegate.h"
 #import "AppDelegate+MMFun.h"
 
-
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -22,6 +20,7 @@
   [self setLoadConfigThirdService];
   
   [self.window makeKeyAndVisible];
+
   return YES;
 }
 

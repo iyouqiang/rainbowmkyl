@@ -1,8 +1,5 @@
-{
-    "status": "success",
-    "code": 0,
-    "channel": "汽车",
-    "result": [{
+export const homeInfo = [{ title:'汽车',
+    data: [{
         "docid": "0In7RImv",
         "url": "https:\/\/www.yidianzixun.com\/article\/0In7RImv?s=caijing&appid=s3rd_caijing",
         "share_url": "https:\/\/www.yidianzixun.com\/article\/0In7RImv?s=caijing&appid=s3rd_caijing&yd_share=1",
@@ -248,4 +245,4 @@
         "media_name": "科普中国",
         "category": ["汽车"]
     }]
-}
+}]

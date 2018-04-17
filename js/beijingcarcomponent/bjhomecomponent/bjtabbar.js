@@ -13,6 +13,7 @@ import { StackNavigator,TabNavigator,TabBarBottom,TabBarTop} from 'react-navigat
 import bjhomepage from './bjhomepage';
 import bjfindpage from './bjfindpage';
 import bjmorepage from './bjmorepage';
+import bjwebviewpage from './bjwebviewpage';
 
 const HomeIcon = require('../../jsfakepage/img/ic_tabbar_home_active.png');
 const FindIcon = require('../../jsfakepage/img/ic_hometest2_active.png');
@@ -43,7 +44,7 @@ const mainTab = TabNavigator(
         order:(['Homepage','Findpage','Morepage']),
         backBehavior:'none',
         tabBarOptions:{
-            activeTintColor:'#CC2C1B',
+            activeTintColor:'#4194FC',
             inactiveTintColor:'#074467',
             showIcon:true,
             showLabel:true,
@@ -78,7 +79,7 @@ const TabOptions = (tabBarTitle, normalImage, selectedImage, navTitle) => {
     const headerTitle = navTitle;
     const headerTitleStyle = { fontSize: 18, color: 'white', alignSelf: 'center' };
     // header的style
-    const headerStyle = { backgroundColor: '#CC2C1B', marginTop: Platform.OS === 'ios' ? 0 : StatusBar.currentHeight };
+    const headerStyle = { backgroundColor: '#4194FC', marginTop: Platform.OS === 'ios' ? 0 : StatusBar.currentHeight };
     const tabBarVisible = true;
     // const header = null;
     return { tabBarLabel, tabBarIcon, headerTitle, headerTitleStyle, headerStyle, tabBarVisible };
@@ -86,17 +87,37 @@ const TabOptions = (tabBarTitle, normalImage, selectedImage, navTitle) => {
 
 const bjNav = StackNavigator(
     {
-       mainTab : {
+        mainTab : {
             screen:mainTab
         },
+
+        DetailWebPage :{
+            screen:bjwebviewpage
+        }
     },
+
     {
-        mode:'card',
-        headerMode:'float',
-        transitionConfig:(()=>({
-            //screenInterpolator:CardStackStyleInterpolator.forHorizontal
-        }))
-    }
+        headerTintColor:'#CC2C1B',
+        headerStyle:{ backgroundColor:'#4194FC'},
+
+        gesturesEnabled:false,
+        mode:'card',  // card 默认 modal iOS独有
+        headerMode:'screen',
+        /**
+         headerMode: 导航栏的显示模式:
+         float: 无透明效果, 默认
+         screen: 有渐变透明效果, 如微信QQ的一样
+         none: 隐藏导航栏
+         * */
+        cardStyle:({backgroundColor:'blue'}),
+
+        onTransitionStart:((route)=>{
+            console.log('开始动画');
+        }),
+        onTransitionEnd:((route)=>{
+            console.log('结束动画');
+        }),
+    },
 );
 
 // export default class bjtabbar extends Component {
