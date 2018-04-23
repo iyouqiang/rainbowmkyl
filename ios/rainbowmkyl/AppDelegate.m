@@ -9,12 +9,15 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+MMFun.h"
+#import <React/RCTBundleURLProvider.h>
+#import <React/RCTRootView.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   self.launchOptions = launchOptions;
+
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   
   [self setLoadConfigThirdService];
@@ -31,15 +34,16 @@
 - (UIViewController *)nativeRootController {
   if (!_nativeRootController) {
     
-    // ⭕️  ⚠️壳入口⚠️   UIViewController 替换自己的入口
+//    // ⭕️  ⚠️壳入口⚠️   UIViewController 替换自己的入口
     _nativeRootController = [[UIViewController alloc] init];
-    _nativeRootController.view.backgroundColor = [UIColor redColor];  // 注意改变自己的背景颜色
+    // 注意改变自己的背景颜色
+    _nativeRootController.view.backgroundColor = [UIColor whiteColor];
   }
+
   return _nativeRootController;
 }
 
 @end
-
 
 
 

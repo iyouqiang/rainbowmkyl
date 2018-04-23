@@ -28,10 +28,14 @@ export default class bjmorepage extends Component {
             <View style={styles.container}>
                 <WebView ref='webView'
                          style={styles.webViewStyle}
-                         source={{uri: 'http://www.hao123.com/auto/wangzhi'} }
+                         //https://luna.58.com/m/autotemplate?city=sz&creativeid=116' 
+                         //http://www.hao123.com/auto/wangzhi
+                         //http://m.weizhangwang.com/#_motz_
+                         source={{uri:'https://m.jiazhao.com/weizhang/'} }
                          startInLoadingState={true}
                          domStorageEnabled={true}
                          javaScriptEnabled={true}
+                         // injectedJavaScript={'document.getElementsByClassName(\'bottomline\')[0].style.display=\'none\';'}
                 >
                 </WebView>
             </View>
@@ -42,7 +46,7 @@ export default class bjmorepage extends Component {
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        backgroundColor:'#FFF2E8',
+        backgroundColor:'white',
         justifyContent:'center',
         alignItems:'center'
     },

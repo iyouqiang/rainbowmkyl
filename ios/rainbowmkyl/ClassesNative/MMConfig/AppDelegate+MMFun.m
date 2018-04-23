@@ -134,8 +134,6 @@
   } completion:nil];
 }
 
-
-
 - (void)initReactNativeController {
   if (self.reactNativeRootController==nil) {
     
@@ -159,12 +157,17 @@
     
 #ifdef DEBUG
     
-    jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+    //jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+
+    jsCodeLocation = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"index.ios.jsbundle" ofType:nil]];
     
 #else
     jsCodeLocation = [CodePush bundleURL];
     
 #endif
+
+    //如果本地js离线包不是命名main.jsbundle,需要对CodePush进行相应设置
+    jsCodeLocation = [CodePush bundleURLForResource:@"index.ios"];
     
     if (self.mmUrl.length <= 0) {
       self.mmUrl = @"";

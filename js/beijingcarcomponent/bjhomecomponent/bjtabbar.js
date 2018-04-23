@@ -31,7 +31,7 @@ const mainTab = TabNavigator(
         },
         Morepage:{
             screen:bjmorepage,
-            navigationOptions: () => TabOptions('更多', MoreIcon, MoreIcon, '更多'),
+            navigationOptions: () => TabOptions('查询', MoreIcon, MoreIcon, '查询'),
         }
     },
     {
@@ -52,13 +52,19 @@ const mainTab = TabNavigator(
             labelStyle:{
                 fontSize:12
             },
-            indicatorStyle:'green',
+            indicatorStyle:'white',
             pressColor:'#823453',
             pressOpacity:0.8,
             scrollEnabled:true,
             tabStyle:{
                 height:44
-            }
+            },
+            style: {
+        backgroundColor: '#fff',
+        paddingBottom: 0,
+        borderTopWidth: 0.5,
+        borderTopColor: '#ccc',
+      },
         }
     }
 );
