@@ -16,6 +16,9 @@ import Spinkit from 'react-native-spinkit';
 import requesttool from '../bjhttprequest/requesttool';
 import requestconfig from '../bjhttprequest/requestconfig';
 import {homeInfo} from "../bjhttprequest/bjHomeinfo";
+import {addOneInfo} from "../bjhttprequest/bjHomeinfo";
+import {addtwoInfo} from "../bjhttprequest/bjHomeinfo";
+import {addThirdInfo} from "../bjhttprequest/bjHomeinfo";
 
 const currentTimestamp = new Date().getTime();
 var Dimensions = require('Dimensions');
@@ -34,6 +37,7 @@ export default class bjhomepage extends Component {
             sections:homeInfo,
             refreshing:false,
             showLoading:true,
+            loadingstr:'上拉加载更多',
         }
     }
 
@@ -94,10 +98,61 @@ export default class bjhomepage extends Component {
                           ItemSeparatorComponent={() => <View style={{height:0.5, backgroundColor:'#e5e5e5'}}></View>}
 
                           renderItem={ this._renderSectionItemCell }
+
+                          ListFooterComponent={()=><View style={{height:30, alignItems: 'center'}}><Text>{this.state.loadingstr}</Text></View>}
+
+                          onEndReached={(info)=>{
+                              
+                              let lastDic = this.state.sections[0];
+                              var lastArray = lastDic.data;
+                              
+                              let addTempInfo = [];
+                              
+                              switch(lastArray.length/10)
+                              {
+                                  case 1:
+                                      addTempInfo = addOneInfo;
+                                      break;
+                                  case 2:
+                                      addTempInfo = addtwoInfo;
+                                      break;
+                                  case 3:
+                                      addTempInfo = addThirdInfo;
+                              }
+                              
+                              if (lastArray.length/10 > 3 ) {
+    
+                                  this.setState({loadingstr:'没有更多数据'});
+                                  return;
+                              }
+                              
+                              var temparray = lastArray.concat(addOneInfo);
+                              let tempHome  = [{ title:'汽车', data: temparray}];
+                              
+                              this.setState({
+                                  sections:tempHome,
+                                  loadingstr:'正在加载',
+                              });
+    
+                              this.timer = setTimeout(
+                                  () => {
+                                        this.setState({loadingstr:'上拉加载更多'});
+                                      },
+                                  500
+                              );
+                          }}
+                          
+                          onEndReachedThreshold={0}
             />
         );
     }
-
+    
+    componentWillUnmount() {
+        // 如果存在this.timer，则使用clearTimeout清空。
+        // 如果你使用多个timer，那么用多个变量，或者用个数组来保存引用，然后逐个clear
+        this.timer && clearTimeout(this.timer);
+    }
+    
     _extraUniqueKey(item ,index) {
 
         return "index"+index+item;
@@ -202,13 +257,15 @@ const styles = StyleSheet.create({
     },
 
     homeTitleTextStyle:{
-
+    
+        fontFamily:'Courier',
         width:width -140,
         fontSize:15,
         color:'#040404',
     },
 
     homeSubTitleViewStyle:{
+        
         flexDirection:'column',
         margin:5,
         // justifyContent: 'center',

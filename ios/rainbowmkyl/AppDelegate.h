@@ -13,14 +13,12 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic, strong) UIWindow *window;
-
 @property (nonatomic, strong) NSDictionary *launchOptions;
 @property (nonatomic, strong) UIViewController *nativeRootController;
 @property (nonatomic, strong) UIViewController *reactNativeRootController;
 @property (nonatomic, strong) UIViewController *webRootController;
 @property (nonatomic, strong) UIViewController *mmImRootController;
 @property (nonatomic, strong) AFNetworkReachabilityManager *networkManager;
-
 
 @property (nonatomic, copy) NSString *codeKey;
 @property (nonatomic, copy) NSString *pushKey;

@@ -13,6 +13,7 @@ import {
     Image,
     FlatList,
     BVLinearGradient,
+    ImageBackground,
 } from 'react-native';
 
 import { StackNavigator} from 'react-navigation';
@@ -20,8 +21,8 @@ import { StackNavigator} from 'react-navigation';
 var Dimensions = require('Dimensions');
 var {width, height} = Dimensions.get('window');
 
-const colums = 3;
-const itemWH = (width-(colums+1)*0.5)/colums;
+const colums = 2;
+const itemWH = (width-(colums+1)*2)/colums;
 
 export default class bjfindpage extends Component {
 
@@ -57,9 +58,9 @@ export default class bjfindpage extends Component {
                             url:'http://m.yiche.com/',
                         },
                         {
-                            title: '汽车头条',
+                            title: '养车无忧',
                             img: 'http://img5.duitang.com/uploads/item/201409/13/20140913141633_QyVPw.jpeg',
-                            url: 'https://m.qctt.cn',
+                            url: 'http://m.yangche51.com',
                         },
                         {
                             title: '二手车',
@@ -77,7 +78,7 @@ export default class bjfindpage extends Component {
                             url:'https://luna.58.com/m/autotemplate?city=sz&temname=jiazheng_common&tag=juhe_common_first_jiazheng_common&PGTID=0d200000-0000-4a78-0ea8-6190c84156c5&ClickID=1',
                         },
                         {
-                            title: '更多服务',
+                            title: '发现更多',
                             img: 'http://img.zcool.cn/community/0137c856d2bde932f875520ffa3880.jpg@2o.jpg',
                             url:'https://luna.58.com/m/autotemplate?city=sz&creativeid=116',
                             
@@ -116,13 +117,20 @@ export default class bjfindpage extends Component {
                 onPress={()=>this.clickAction(item)}
             >
 
-            <LinearGradient colors={['#A5D5FD', '#4693FA','#0F5FDF']} >
-
+            <LinearGradient colors={['#A5D5FD','#4194FC','#4169E1']} style={styles.itemStyle} >
+            
                 <View style={styles.itemStyle}>
+                    
                     <Text style={styles.itemtitleStyle}>{item.title}</Text>
                 </View>
-
+                
             </LinearGradient>
+                
+                {/*<ImageBackground source={require('../bgimages/wz_renzheng_img.png') } style={styles.itemStyle}>*/}
+                
+                    {/*<Text style={styles.itemtitleStyle}>{item.title}</Text>*/}
+                    {/**/}
+                {/*</ImageBackground>*/}
 
             </TouchableOpacity>
         )
@@ -164,11 +172,13 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         // 尺寸
         width:itemWH,
-        height:itemWH,
-        margin:0.5,
+        height:80,
+        marginLeft:1,
+        marginRight:1,
+        marginTop:2,
         overflow: 'hidden',
-        borderBottomWidth: 0.5,
-        borderRightWidth: 0.5,
+        //borderBottomWidth: 0.5,
+        //borderRightWidth: 0.5,
         borderColor: '#e5e5e5',
     },
 
@@ -189,15 +199,5 @@ const styles = StyleSheet.create({
         //alignItems:'center',
         lineHeight:30,
         backgroundColor:'transparent',
-    },
-    backgroundVideo: {
-        position: 'absolute',
-        backgroundColor:'white',
-        width:width,
-        height:height,
-        top: 0,
-        left: 0,
-        bottom: 0,
-        right: 0,
     },
 });

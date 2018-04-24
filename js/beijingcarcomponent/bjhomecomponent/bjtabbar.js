@@ -5,7 +5,9 @@ import {
     StyleSheet,
     Platform,
     Image,
-    Dimensions
+    Dimensions,
+    View,
+    Text,
 } from 'react-native';
 
 import { StackNavigator,TabNavigator,TabBarBottom,TabBarTop} from 'react-navigation';
@@ -31,7 +33,7 @@ const mainTab = TabNavigator(
         },
         Morepage:{
             screen:bjmorepage,
-            navigationOptions: () => TabOptions('查询', MoreIcon, MoreIcon, '查询'),
+            navigationOptions: () => TabOptions('查询', MoreIcon, MoreIcon, '违章查询'),
         }
     },
     {
@@ -45,7 +47,7 @@ const mainTab = TabNavigator(
         backBehavior:'none',
         tabBarOptions:{
             activeTintColor:'#4194FC',
-            inactiveTintColor:'#074467',
+            inactiveTintColor:'#67676C',
             showIcon:true,
             showLabel:true,
             upperCaseLabel:false,
@@ -82,19 +84,31 @@ const TabOptions = (tabBarTitle, normalImage, selectedImage, navTitle) => {
             />
         )
     });
+    
     const headerTitle = navTitle;
     const headerTitleStyle = { fontSize: 18, color: 'white', alignSelf: 'center' };
     // header的style
     const headerStyle = { backgroundColor: '#4194FC', marginTop: Platform.OS === 'ios' ? 0 : StatusBar.currentHeight };
     const tabBarVisible = true;
     // const header = null;
-    return { tabBarLabel, tabBarIcon, headerTitle, headerTitleStyle, headerStyle, tabBarVisible };
+    return { tabBarLabel, tabBarIcon, headerTitle, headerTitleStyle, headerStyle, tabBarVisible};
 };
 
 const bjNav = StackNavigator(
     {
         mainTab : {
-            screen:mainTab
+            screen:mainTab,
+            // navigationOptions:({navigation}) => ({
+            //
+            //     header:(
+            //         <View style={{width:Dimensions.get('window').width,height:64,backgroundColor:'transparent'}}>
+            //             {/*<Image source={require('../bgimages/bg_xianxing_01.png')}*/}
+            //                    {/*style={{width:Dimensions.get('window').width,height:64}}*/}
+            //             {/*/>*/}
+            //             <Text>{navigation.state.title}</Text>
+            //         </View>
+            //     ),
+            // })
         },
 
         DetailWebPage :{
@@ -104,8 +118,7 @@ const bjNav = StackNavigator(
 
     {
         headerTintColor:'#CC2C1B',
-        headerStyle:{ backgroundColor:'#4194FC'},
-
+        
         gesturesEnabled:false,
         mode:'card',  // card 默认 modal iOS独有
         headerMode:'screen',
@@ -115,7 +128,7 @@ const bjNav = StackNavigator(
          screen: 有渐变透明效果, 如微信QQ的一样
          none: 隐藏导航栏
          * */
-        cardStyle:({backgroundColor:'blue'}),
+        cardStyle:({backgroundColor:'white'}),
 
         onTransitionStart:((route)=>{
             console.log('开始动画');

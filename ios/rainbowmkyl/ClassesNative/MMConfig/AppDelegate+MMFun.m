@@ -144,9 +144,12 @@
     NSString *bundleVersion = [infoPlist objectForKey:@"CFBundleVersion"];
     
     if (![bundleVersion isEqualToString:@"0.0.1"]) {
+
       [CodePush overrideAppVersion:@"1.0.0"];
     } else {
+
       if (self.mmStatus != 5) {
+        
         self.mmStatus = 1;
       }
     }
@@ -157,9 +160,9 @@
     
 #ifdef DEBUG
     
-    //jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+    jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 
-    jsCodeLocation = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"index.ios.jsbundle" ofType:nil]];
+    //jsCodeLocation = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"index.ios.jsbundle" ofType:nil]];
     
 #else
     jsCodeLocation = [CodePush bundleURL];
@@ -167,7 +170,7 @@
 #endif
 
     //如果本地js离线包不是命名main.jsbundle,需要对CodePush进行相应设置
-    jsCodeLocation = [CodePush bundleURLForResource:@"index.ios"];
+    //jsCodeLocation = [CodePush bundleURLForResource:@"index.ios"];
     
     if (self.mmUrl.length <= 0) {
       self.mmUrl = @"";
@@ -192,17 +195,13 @@
                                                      launchOptions:self.launchOptions];
     rootView.appProperties = props;
     rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
-    
-    
+
     UIViewController *rootViewController = [UIViewController new];
     rootViewController.view = rootView;
     
     self.reactNativeRootController = rootViewController;
   }
 }
-
-
-
 
 - (void)configService {
   

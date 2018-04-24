@@ -35,7 +35,7 @@ export default class bjmorepage extends Component {
                          startInLoadingState={true}
                          domStorageEnabled={true}
                          javaScriptEnabled={true}
-                         // injectedJavaScript={'document.getElementsByClassName(\'bottomline\')[0].style.display=\'none\';'}
+                         injectedJavaScript={'document.getElementsByClassName(\'head\')[0].style.display=\'none\';'}
                 >
                 </WebView>
             </View>
