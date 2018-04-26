@@ -41,7 +41,7 @@ navigationOptionInfo.commomHeader = (props) => {
             </TouchableOpacity>
         ),
 
-        headerStyle : { backgroundColor: '#4194FC', marginTop: Platform.OS === 'ios' ? 0 : StatusBar.currentHeight },
+        headerStyle : { backgroundColor: '#3974CB', marginTop: Platform.OS === 'ios' ? 0 : StatusBar.currentHeight },
         headerTitleStyle : { fontSize: 18, color: 'white', alignSelf: 'center' },
 
         gesturesEnabled:false,

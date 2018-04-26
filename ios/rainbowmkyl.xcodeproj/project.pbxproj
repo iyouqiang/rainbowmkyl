@@ -113,6 +113,14 @@
 		B20705D691E34AC38EC17229 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7BBC5FEC4E46E7BF405B37 /* SystemConfiguration.framework */; };
 		B37406779D9E4F8A91E9853C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BE0C7655ACB484F8E5BD31B /* FontAwesome.ttf */; };
 		B6FD827C977943C5B94F6983 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045E980E98A2480DB1F0ECEB /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B717EC74209079B9005E846E /* public_list_ic.png in Resources */ = {isa = PBXBuildFile; fileRef = B717EC65209079B8005E846E /* public_list_ic.png */; };
+		B717EC75209079B9005E846E /* ic_hometest2_active.png in Resources */ = {isa = PBXBuildFile; fileRef = B717EC68209079B8005E846E /* ic_hometest2_active.png */; };
+		B717EC76209079B9005E846E /* ic_tabbar_home_active.png in Resources */ = {isa = PBXBuildFile; fileRef = B717EC69209079B8005E846E /* ic_tabbar_home_active.png */; };
+		B717EC77209079B9005E846E /* ic_tabbar_me_active.png in Resources */ = {isa = PBXBuildFile; fileRef = B717EC6A209079B8005E846E /* ic_tabbar_me_active.png */; };
+		B717EC78209079B9005E846E /* back-icon-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = B717EC70209079B8005E846E /* back-icon-mask.png */; };
+		B717EC79209079B9005E846E /* back-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B717EC71209079B8005E846E /* back-icon.png */; };
+		B717EC7A209079B9005E846E /* back-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B717EC72209079B8005E846E /* back-icon@2x.png */; };
+		B717EC7B209079B9005E846E /* back-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B717EC73209079B8005E846E /* back-icon@3x.png */; };
 		B79D5D772087306E00CDE2A4 /* index.ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = B79D5D402087306E00CDE2A4 /* index.ios.jsbundle */; };
 		B877F9DC85204F3791708417 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F9CA7474F674BFEBF200FF4 /* MaterialCommunityIcons.ttf */; };
 		C90A3C859FE645BB836E1DC2 /* libRNAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1146ADFC5AA746E693DCEA53 /* libRNAudio.a */; };
@@ -695,6 +703,14 @@
 		9B60536479B34388ACCE958E /* CFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B6236E42D62E453DB1C38E3D /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = "<group>"; };
+		B717EC65209079B8005E846E /* public_list_ic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = public_list_ic.png; sourceTree = "<group>"; };
+		B717EC68209079B8005E846E /* ic_hometest2_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_hometest2_active.png; sourceTree = "<group>"; };
+		B717EC69209079B8005E846E /* ic_tabbar_home_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_tabbar_home_active.png; sourceTree = "<group>"; };
+		B717EC6A209079B8005E846E /* ic_tabbar_me_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_tabbar_me_active.png; sourceTree = "<group>"; };
+		B717EC70209079B8005E846E /* back-icon-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-icon-mask.png"; sourceTree = "<group>"; };
+		B717EC71209079B8005E846E /* back-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-icon.png"; sourceTree = "<group>"; };
+		B717EC72209079B8005E846E /* back-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-icon@2x.png"; sourceTree = "<group>"; };
+		B717EC73209079B8005E846E /* back-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-icon@3x.png"; sourceTree = "<group>"; };
 		B79D5D402087306E00CDE2A4 /* index.ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = index.ios.jsbundle; path = bundle/index.ios.jsbundle; sourceTree = "<group>"; };
 		BC2EFCB419314DD08DCFE36F /* RCTCamera.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RCTCamera.xcodeproj"; sourceTree = "<group>"; };
 		BC768E50B277489CB7929491 /* libRCTJCoreModule.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTJCoreModule.a; sourceTree = "<group>"; };
@@ -851,6 +867,7 @@
 				271B4C9C1F88963600CC55A4 /* ClassesNative */,
 				27CC438F1FD0498C001ADA43 /* AppMacros.h */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				B717EC61209079B8005E846E /* assets */,
 				B79D5D402087306E00CDE2A4 /* index.ios.jsbundle */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				27D2BBF71F66BBEC008B8A18 /* InfoPlist.strings */,
@@ -1429,6 +1446,102 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B717EC61209079B8005E846E /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				B717EC62209079B8005E846E /* js */,
+				B717EC6B209079B8005E846E /* node_modules */,
+			);
+			name = assets;
+			path = bundle/assets;
+			sourceTree = "<group>";
+		};
+		B717EC62209079B8005E846E /* js */ = {
+			isa = PBXGroup;
+			children = (
+				B717EC63209079B8005E846E /* beijingcarcomponent */,
+				B717EC66209079B8005E846E /* jsfakepage */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		B717EC63209079B8005E846E /* beijingcarcomponent */ = {
+			isa = PBXGroup;
+			children = (
+				B717EC64209079B8005E846E /* bgimages */,
+			);
+			path = beijingcarcomponent;
+			sourceTree = "<group>";
+		};
+		B717EC64209079B8005E846E /* bgimages */ = {
+			isa = PBXGroup;
+			children = (
+				B717EC65209079B8005E846E /* public_list_ic.png */,
+			);
+			path = bgimages;
+			sourceTree = "<group>";
+		};
+		B717EC66209079B8005E846E /* jsfakepage */ = {
+			isa = PBXGroup;
+			children = (
+				B717EC67209079B8005E846E /* img */,
+			);
+			path = jsfakepage;
+			sourceTree = "<group>";
+		};
+		B717EC67209079B8005E846E /* img */ = {
+			isa = PBXGroup;
+			children = (
+				B717EC68209079B8005E846E /* ic_hometest2_active.png */,
+				B717EC69209079B8005E846E /* ic_tabbar_home_active.png */,
+				B717EC6A209079B8005E846E /* ic_tabbar_me_active.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		B717EC6B209079B8005E846E /* node_modules */ = {
+			isa = PBXGroup;
+			children = (
+				B717EC6C209079B8005E846E /* react-navigation */,
+			);
+			path = node_modules;
+			sourceTree = "<group>";
+		};
+		B717EC6C209079B8005E846E /* react-navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B717EC6D209079B8005E846E /* src */,
+			);
+			path = "react-navigation";
+			sourceTree = "<group>";
+		};
+		B717EC6D209079B8005E846E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B717EC6E209079B8005E846E /* views */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B717EC6E209079B8005E846E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B717EC6F209079B8005E846E /* assets */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B717EC6F209079B8005E846E /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				B717EC70209079B8005E846E /* back-icon-mask.png */,
+				B717EC71209079B8005E846E /* back-icon.png */,
+				B717EC72209079B8005E846E /* back-icon@2x.png */,
+				B717EC73209079B8005E846E /* back-icon@3x.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		B78541C120871C1400A9BC02 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1470,11 +1583,11 @@
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = C7U5N4698Q;
+						DevelopmentTeam = XLC7PDFBGN;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -1995,20 +2108,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B717EC74209079B9005E846E /* public_list_ic.png in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				B717EC76209079B9005E846E /* ic_tabbar_home_active.png in Resources */,
 				27D2BBF51F66BBEC008B8A18 /* InfoPlist.strings in Resources */,
+				B717EC77209079B9005E846E /* ic_tabbar_me_active.png in Resources */,
 				278E92BF1FE7D7C500FE1ED6 /* README.iOS.md in Resources */,
 				2795651B1FFE297A00A67CAB /* Bugtags.bundle in Resources */,
+				B717EC78209079B9005E846E /* back-icon-mask.png in Resources */,
+				B717EC75209079B9005E846E /* ic_hometest2_active.png in Resources */,
+				B717EC7B209079B9005E846E /* back-icon@3x.png in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				42F82002F5914DA6BDF87829 /* Entypo.ttf in Resources */,
 				271B4D371F88963700CC55A4 /* IQKeyboardManager.bundle in Resources */,
 				308F7F91423546DD9C916217 /* EvilIcons.ttf in Resources */,
+				B717EC79209079B9005E846E /* back-icon.png in Resources */,
 				B37406779D9E4F8A91E9853C /* FontAwesome.ttf in Resources */,
 				D4FFFAAC6133453E8E5DF962 /* Foundation.ttf in Resources */,
 				AF30B98C3FB84BC9B700E4B7 /* Ionicons.ttf in Resources */,
 				B877F9DC85204F3791708417 /* MaterialCommunityIcons.ttf in Resources */,
 				6CF8740958AE4AA69A7F2AFB /* MaterialIcons.ttf in Resources */,
 				731599134AC24ED189FD3D9D /* Octicons.ttf in Resources */,
+				B717EC7A209079B9005E846E /* back-icon@2x.png in Resources */,
 				FC3C53CA4B99416BB1D15D48 /* SimpleLineIcons.ttf in Resources */,
 				D8F00A937D7544719352853D /* Zocial.ttf in Resources */,
 				B79D5D772087306E00CDE2A4 /* index.ios.jsbundle in Resources */,
@@ -2143,13 +2264,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODEPUSH_KEY = "FBDBf9iu-n7rLWHTTNxJ283FsGJ0d7d62cf4-7fea-4153-b5ee-b7707e421717";
-				CODE_SIGN_IDENTITY = "iPhone Developer: bing tian (AZF2ZMEDC9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: bing tian (AZF2ZMEDC9)";
+				CODE_SIGN_ENTITLEMENTS = rainbowmkyl/rainbowmkyl.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Arthur Longman (XLC7PDFBGN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Arthur Longman (XLC7PDFBGN)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				CusAppName = "彩彩";
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = C7U5N4698Q;
+				DEVELOPMENT_TEAM = XLC7PDFBGN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2200,10 +2322,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.World.HACKER.MONE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beijingracing.outsourcing;
 				PRODUCT_NAME = rainbowmkyl;
-				PROVISIONING_PROFILE = "559329c8-f4b2-41df-8a2a-d743ba8afcfa";
-				PROVISIONING_PROFILE_SPECIFIER = EcarayDebug;
+				PROVISIONING_PROFILE = "473e6316-f06b-48ea-ad39-d4b9c468ce18";
+				PROVISIONING_PROFILE_SPECIFIER = BeijingracingDistribution;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -2215,12 +2337,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODEPUSH_KEY = "FBDBf9iu-n7rLWHTTNxJ283FsGJ0d7d62cf4-7fea-4153-b5ee-b7707e421717";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: cun huang (95GRDS35JH)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = rainbowmkyl/rainbowmkyl.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Arthur Longman (XLC7PDFBGN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Arthur Longman (XLC7PDFBGN)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				CusAppName = "彩彩";
-				DEVELOPMENT_TEAM = C7U5N4698Q;
+				DEVELOPMENT_TEAM = XLC7PDFBGN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2268,10 +2391,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.World.HACKER.MONE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beijingracing.outsourcing;
 				PRODUCT_NAME = rainbowmkyl;
-				PROVISIONING_PROFILE = "06acbdf2-f36c-43f3-bc11-b2866de9cd52";
-				PROVISIONING_PROFILE_SPECIFIER = EcarayDebug;
+				PROVISIONING_PROFILE = "473e6316-f06b-48ea-ad39-d4b9c468ce18";
+				PROVISIONING_PROFILE_SPECIFIER = BeijingracingDistribution;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -2320,12 +2443,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODEPUSH_KEY = "pbsf87jYtN0qCu3417uWJPtMvfEzd7d62cf4-7fea-4153-b5ee-b7707e421717";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: cun huang (95GRDS35JH)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = rainbowmkyl/rainbowmkyl.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Arthur Longman (XLC7PDFBGN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Arthur Longman (XLC7PDFBGN)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				CusAppName = "彩彩";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XLC7PDFBGN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2373,10 +2497,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.World.HACKER.MONE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beijingracing.outsourcing;
 				PRODUCT_NAME = rainbowmkyl;
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "473e6316-f06b-48ea-ad39-d4b9c468ce18";
+				PROVISIONING_PROFILE_SPECIFIER = BeijingracingDistribution;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

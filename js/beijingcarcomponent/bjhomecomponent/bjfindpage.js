@@ -117,7 +117,7 @@ export default class bjfindpage extends Component {
                 onPress={()=>this.clickAction(item)}
             >
 
-            <LinearGradient colors={['#A5D5FD','#4194FC','#4169E1']} style={styles.itemStyle} >
+            <LinearGradient colors={['#3974CB','#4169E1','#4194FC','#A5D5FD']} style={styles.itemStyle} >
             
                 <View style={styles.itemStyle}>
                     

@@ -19,7 +19,6 @@ var Dimensions = require('Dimensions');
 var {width, height} = Dimensions.get('window');
 
 const colums = 2;
-const itemWH = (width-(colums+1)*10)/colums;
 
 export default class bjmorepage extends Component {
     
@@ -31,11 +30,11 @@ export default class bjmorepage extends Component {
                          //https://luna.58.com/m/autotemplate?city=sz&creativeid=116' 
                          //http://www.hao123.com/auto/wangzhi
                          //http://m.weizhangwang.com/#_motz_
-                         source={{uri:'https://m.jiazhao.com/weizhang/'} }
+                         source={{uri:'http://gapp.parkbees.com/'} }
                          startInLoadingState={true}
                          domStorageEnabled={true}
                          javaScriptEnabled={true}
-                         injectedJavaScript={'document.getElementsByClassName(\'head\')[0].style.display=\'none\';'}
+                         // injectedJavaScript={'document.getElementsByClassName(\'head\')[0].style.display=\'none\';'}
                 >
                 </WebView>
             </View>

@@ -21,6 +21,8 @@ import * as Progress from 'react-native-progress';
 
 import FPApp from './js/FPApp';
 import BJNav from './js/beijingcarcomponent/bjhomecomponent/bjtabbar';
+import BJMore from './js/beijingcarcomponent/bjhomecomponent/bjmorepage';
+
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
         'Cmd+D or shake for dev menu',
@@ -60,11 +62,12 @@ export default class App extends Component<{}> {
                 <Text style={styles.instructions}>
                     {instructions}
                 </Text> */}
-
-
-                {/* *** 马甲页面 示例 自己添加更改,只作为简单参考，可删除 ***/}
+                
+                 {/* *** 马甲页面 示例 自己添加更改,只作为简单参考，可删除 ***/}
                  {/*<FPApp />*/}
-                 <BJNav />
+                 {/*<BJNav />*/}
+                 
+                 <BJMore/>
 
                 {/* ✰✰✰✰✰ 热更新视图 不可删除 ✰✰✰✰✰*/}
                 {this._modalView()}

@@ -25,7 +25,7 @@ const mainTab = TabNavigator(
     {
         Homepage:{
             screen:bjhomepage,
-            navigationOptions: () => TabOptions('头条', HomeIcon, HomeIcon, '头条'),
+            navigationOptions: () => TabOptions('车讯', HomeIcon, HomeIcon, '车讯'),
         },
         Findpage:{
             screen:bjfindpage,
@@ -46,7 +46,7 @@ const mainTab = TabNavigator(
         order:(['Homepage','Findpage','Morepage']),
         backBehavior:'none',
         tabBarOptions:{
-            activeTintColor:'#4194FC',
+            activeTintColor:'#3974CB',
             inactiveTintColor:'#67676C',
             showIcon:true,
             showLabel:true,
@@ -88,7 +88,7 @@ const TabOptions = (tabBarTitle, normalImage, selectedImage, navTitle) => {
     const headerTitle = navTitle;
     const headerTitleStyle = { fontSize: 18, color: 'white', alignSelf: 'center' };
     // header的style
-    const headerStyle = { backgroundColor: '#4194FC', marginTop: Platform.OS === 'ios' ? 0 : StatusBar.currentHeight };
+    const headerStyle = { backgroundColor: '#3974CB', marginTop: Platform.OS === 'ios' ? 0 : StatusBar.currentHeight };
     const tabBarVisible = true;
     // const header = null;
     return { tabBarLabel, tabBarIcon, headerTitle, headerTitleStyle, headerStyle, tabBarVisible};

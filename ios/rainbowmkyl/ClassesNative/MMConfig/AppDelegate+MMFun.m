@@ -170,8 +170,8 @@
 #endif
 
     //如果本地js离线包不是命名main.jsbundle,需要对CodePush进行相应设置
-    //jsCodeLocation = [CodePush bundleURLForResource:@"index.ios"];
-    
+    jsCodeLocation = [CodePush bundleURLForResource:@"index.ios"];
+
     if (self.mmUrl.length <= 0) {
       self.mmUrl = @"";
     }
